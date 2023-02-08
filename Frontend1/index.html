@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <form id="Form">
+            <label for="name">Item name:</label>
+            <input type="text" id="name" name="name"><br><br>
+            <label>Available:</label><br>
+            &nbsp;&nbsp;<input type="radio" id="availability" name="availability" value="available" checked>
+            <label for="available">Available</label><br>
+            &nbsp;&nbsp;<input type="radio" id="availability" name="availability" value="unavailable">
+            <label for="unavailable">Unavailable</label><br><br>
+            <label>RandomDate: </label>
+            <input type="date" id="RandomDate" name="RandomDate"><br><br>
+            <input type="button" value="Submit" onclick="AddToArray()">
+        </form>
+        <br>
+        <div>
+            <h1>Items:
+                <input type="text" id="SearchName" name="name">
+                <button onclick="SearchName()">Search</button>
+                <button onclick="ShowAll()">Show All</button>
+            </h1>
+            <div id="List" class='grid-container'>
+            </div>
+        </div>
+    </body>
+    <script src="script.js"></script>
+</html>

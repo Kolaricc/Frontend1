@@ -1,0 +1,23 @@
+body {
+    background-color:antiquewhite;
+  }
+  .grid-container {
+    display: grid;
+    column-gap: 1px;
+    grid-template-columns: 33% 33% 33%;
+    padding: 2px;
+  }
+  
+  .grid-item {
+    background-color: white;
+    border: 1px solid rgb(0, 0, 0);
+    font-size: 15px;
+    text-align: center;
+  }
+  .grid-item-name{
+    background-color:azure;
+    border: 1px solid rgb(0, 0, 0);
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+  }
